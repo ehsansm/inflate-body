@@ -12,7 +12,7 @@ Returns inflate data from a given HTTP stream and validate its buffer length aga
 const http = require('http')
 const inflate = require('inflat-body')
 
-htpt.createServer((req, res) => {
+http.createServer((req, res) => {
   inflate(req, options).then(str => {
     // do something with request string
   })
